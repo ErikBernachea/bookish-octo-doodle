@@ -1,0 +1,296 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200%;
+}
+
+header {
+  background-color: #000000;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+/* HOME */
+
+.title img {
+  max-width: 20%;
+  color: rgb(255, 255, 255);
+}
+
+#intro {
+  background-color: #000000;
+}
+
+#intro h1 {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+#intro p {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  max-width: 1320p;
+}
+
+#DiscographyHOME {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#DiscographyHOME h2 {
+  margin-bottom: 30px;
+}
+
+.discography__logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discography__logo-item {
+  position: relative;
+}
+
+.discography__logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.discography__logo-box img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.discography__logo-box img:hover {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.discography__logo-box img:hover + .discography__logo-text {
+  visibility: visible;
+  opacity: 1;
+  color: #c65c00d9;
+}
+
+.nav_linkA {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#youtube__video {
+  background-color: #c65c00d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 0px 0px 10px black;
+}
+
+#youtube__video iframe {
+  align-self: center;
+}
+
+/* fin HOME */
+
+/* BIO */
+
+#Band__members {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#Band__members h2 {
+  margin-bottom: 30px;
+}
+
+.member__logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member__logo-item {
+  position: relative;
+}
+
+.member__logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.member__logo-box img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+.member__logo-box img:hover {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.member__logo-box img:hover + .member__logo-text {
+  visibility: visible;
+  opacity: 1;
+  color: #c65c00d9;
+}
+/* fin BIO */
+
+/* Dicography */
+#Discography2 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+#Discography2 h2 {
+  margin-bottom: 30px;
+}
+
+.discography2__logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discography2__logo-item {
+  position: relative;
+}
+
+.discography2__logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.discography2__logo-box img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.discography2__logo-box img:hover {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.discography2__logo-box img:hover + .discography2__logo-text {
+  visibility: visible;
+  opacity: 1;
+  color: #c65c00d9;
+}
+
+#Singles {
+  text-align: center;
+}
+
+#Singles img {
+  max-width: 20%;
+  max-width: 1320p;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.singles__logo-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title__FAQ {
+  background-color: #000000;
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.tabla {
+  background-color: #000000;
+  text-align: center;
+}
+
+.preguntas {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.links_title {
+  text-align: center;
+}
+
+.container-Links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+}
+
+.footer-sm {
+  background-color: #212121;
+  color: white;
+}
+
+.footer-sm h5 {
+  padding-top: 5px;
+}
+
+.foot-bottom_copyright {
+  background-color: #000000;
+  color: white;
+}
