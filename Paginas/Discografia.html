@@ -32,6 +32,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>IDLES</title>
   </head>
   <body>
@@ -40,7 +41,7 @@
       <div>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../home.html">IDLES</a>
+            <a class="navbar-brand" href="../index.html">IDLES</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -55,26 +56,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Paginas/Bio.html">Biografia</a>
+                </li>
+                <li class="nav-item">
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="../home.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/Paginas/Bio.html">Biografia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/Paginas/Discografia.html"
+                    href="../Paginas/Discografia.html"
                     >Discografia</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Paginas/FAQ.html">FAQ</a>
+                  <a class="nav-link" href="../Paginas/FAQ.html">FAQ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Paginas/contacto.html">Contacto</a>
+                  <a class="nav-link" href="../Paginas/contacto.html"
+                    >Contacto</a
+                  >
                 </li>
               </ul>
             </div>
@@ -83,55 +84,80 @@
       </div>
     </header>
 
-    <section id="Discography2">
-      <h2>Discografía</h2>
-      <div class="discography2__logo-box">
-        <div class="discography2__logo-item">
-          <img src="../img/brutalism.jpg" class="rounded" alt="Brutalism" />
-          <p class="discography2__logo-text">Brutalism</p>
+    <section id="DiscographyHOME">
+      <h1>Discografía</h1>
+      <div class="discography__logo-box">
+        <div class="discography__logo-item">
+          <a
+            href="https://open.spotify.com/album/3VrfVLndSkH81aE4CqivdI?si=cjdNxd1vTASm9FNNP_vzVg"
+            target="_blank"
+          >
+            <img src="../img/brutalism.jpg" class="rounded" alt="Brutalism" />
+            <p class="discography__logo-text">Brutalism</p>
+          </a>
         </div>
-        <div class="discography2__logo-item">
-          <img src="../img/crawler.jpg" class="rounded" alt="Crawler" />
-          <p class="discography2__logo-text">Crawler</p>
+        <div class="discography__logo-item">
+          <a
+            href="https://open.spotify.com/album/1WXcTQXt1jeF5VGUNAeySv?si=9_U-nrSAQz2sKNCCs0dvXw"
+            target="_blank"
+          >
+            <img src="../img/crawler.jpg" class="rounded" alt="Crawler" />
+            <p class="discography__logo-text">Crawler</p>
+          </a>
         </div>
-        <div class="discography2__logo-item">
-          <img
-            src="../img/singles/s.brutalism.jpg"
-            class="rounded"
-            alt="Five Year of Brutalism"
-          />
-          <p class="discography2__logo-text">Five years of Brutalism</p>
+        <div class="discography__logo-item">
+          <a
+            href="https://open.spotify.com/album/16kZNvAcaRbNw4qDMpKNLX?si=sJ1kYs3kQ3Cn3cdIa3zo9g"
+            target="_blank"
+          >
+            <img
+              src="../img/singles/s.brutalism.jpg"
+              class="rounded"
+              alt="Five Year of Brutalism"
+            />
+            <p class="discography__logo-text">Five years of Brutalism</p>
+          </a>
         </div>
-        <div class="discography2__logo-item">
-          <img
-            src="../img/idles-ultra-mono-cd.jpg"
-            class="rounded"
-            alt="Ultra Mono"
-          />
-          <p class="discography2__logo-text">Ultra Mono</p>
+        <div class="discography__logo-item">
+          <a
+            href="https://open.spotify.com/album/0ojQHzflxMs6SfvBBkRKt6?si=dfEmAdyYRWqhj_hynpTF7w"
+            target="_blank"
+          >
+            <img
+              src="../img/idles-ultra-mono-cd.jpg"
+              class="rounded"
+              alt="Ultra Mono"
+            />
+            <p class="discography__logo-text">Ultra Mono</p>
+          </a>
         </div>
-        <div class="discography2__logo-item">
-          <img
-            src="../img/joy.jpg"
-            class="rounded"
-            alt="Joy as an Act of Resistance"
-          />
-          <p class="discography2__logo-text">Joy as an Act of Resistance</p>
+        <div class="discography__logo-item">
+          <a
+            href="https://open.spotify.com/album/7BbRSUBwTB37ut0Ht3yAqt?si=1oGcW03cQkS5h9cZTNbwtA"
+            target="_blank"
+          >
+            <img
+              src="../img/joy.jpg"
+              class="rounded"
+              alt="Joy as an Act of Resistance"
+            />
+            <p class="discography__logo-text">Joy as an Act of Resistance</p>
+          </a>
         </div>
       </div>
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
-        fill="#000000"
+        fill="#c65c00d9"
         fill-opacity="1"
-        d="M0,256L60,240C120,224,240,192,360,165.3C480,139,600,117,720,112C840,107,960,117,1080,149.3C1200,181,1320,235,1380,261.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        d="M0,256L60,240C120,224,240,192,360,165.3C480,139,600,117,720,112C840,107,960,117,1080,149.3C1200,181,1320,235,1380,261.3L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
       ></path>
     </svg>
 
     <section id="Singles">
       <h2>Singles</h2>
-      <div class="sinlges__logo-box">
+      <div class="singles__logo-box">
         <div class="singles__logo-item">
           <img src="../img/singles/s.brutalism.jpg" alt="1049 Gotho" />
           <p class="singles__logo-text">1049 Gotho</p>
@@ -263,11 +289,25 @@
     <footer>
       <div class="footer-sm">
         <h5>Redes</h5>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-spotify"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.facebook.com/eriksebastian.bernachea/"
+          target="_blank"
+          ><i class="fab fa-facebook icon-big"></i
+        ></a>
+        <a href="https://ar.pinterest.com/erikbernachea95/" target="_blank"
+          ><i class="fab fa-pinterest icon-big"></i
+        ></a>
+        <a href=""><i class="fab fa-telegram icon-big" target="_blank"></i></a>
+        <a
+          href="https://open.spotify.com/playlist/4QTn20IA5NvT7gIjQE5c88?si=88b8c6e67c574189"
+          target="_blank"
+          ><i class="fab fa-spotify icon-big"></i
+        ></a>
+        <a
+          href="https://github.com/ErikBernachea/bookish-octo-doodle.git"
+          target="_blank"
+          ><i class="fab fa-github icon-big"></i
+        ></a>
       </div>
       <div class="foot-bottom_copyright">
         &copy; Copyright 2022 <a href="https://www.idlesband.com/">IDLES</a> |

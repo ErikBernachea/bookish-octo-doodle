@@ -16,7 +16,7 @@ header {
   z-index: 2;
 }
 
-/* HOME */
+/* INDEX */
 
 .title img {
   max-width: 20%;
@@ -97,6 +97,15 @@ header {
   color: #c65c00d9;
 }
 
+a.btn {
+  transition: all 0.3s ease;
+}
+
+a.btn:hover {
+  color: #c65c00d9;
+  border-color: #c65c00d9;
+}
+
 .nav_linkA {
   border-radius: 20px;
   border: 2px solid black;
@@ -122,130 +131,64 @@ header {
 
 /* fin HOME */
 
-/* BIO */
-
-#Band__members {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#Band__members h2 {
-  margin-bottom: 30px;
-}
-
-.member__logo-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.member__logo-item {
-  position: relative;
-}
-
-.member__logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.member__logo-box img {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.member__logo-box img:hover {
-  filter: blur(5px);
-  transform: scale(1.1);
-}
-
-.member__logo-box img:hover + .member__logo-text {
-  visibility: visible;
-  opacity: 1;
-  color: #c65c00d9;
-}
-/* fin BIO */
-
 /* Dicography */
-#Discography2 {
-  text-align: center;
-  margin-bottom: 30px;
-  background-color: #000000;
-  text-align: center;
-  color: #ffffff;
-  margin: 0 auto;
-}
 
-#Discography2 h2 {
-  margin-bottom: 30px;
-}
-
-.discography2__logo-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.discography2__logo-item {
-  position: relative;
-}
-
-.discography2__logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.discography2__logo-box img {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  transition: all 0.3s ease-in-out;
-}
-
-.discography2__logo-box img:hover {
-  filter: blur(5px);
-  transform: scale(1.1);
-}
-
-.discography2__logo-box img:hover + .discography2__logo-text {
-  visibility: visible;
-  opacity: 1;
-  color: #c65c00d9;
+#Singles {
+  background-color: #c65c00d9;
 }
 
 #Singles {
   text-align: center;
 }
 
-#Singles img {
-  max-width: 20%;
-  max-width: 1320p;
-  border-radius: 1rem;
-  padding: 2rem;
+#Singles h2 {
+  margin-bottom: 30px;
 }
 
 .singles__logo-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
+
+.singles__logo-item {
+  position: relative;
+}
+
+.singles__logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.singles__logo-box img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.singles__logo-box img:hover {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.singles__logo-box img:hover + .singles__logo-text {
+  visibility: visible;
+  opacity: 1;
+  color: #c65c00d9;
+}
+
+/* fin discografia */
+
+/* Faq */
 
 .title__FAQ {
   background-color: #000000;
@@ -253,16 +196,18 @@ header {
   width: auto;
   height: auto;
   text-align: center;
+  margin: 0 auto;
 }
 
-.tabla {
+.accordion .accordion-item {
   background-color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
-.preguntas {
+.accordion-button {
   background-color: #000000;
-  color: #ffffff;
+  color: #c65c00d9;
   text-align: center;
 }
 
@@ -270,24 +215,196 @@ header {
   text-align: center;
 }
 
-.container-Links {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  align-items: center;
+  justify-items: center;
 }
+
+.icon-container .icon-big {
+  font-size: 80px;
+  color: #c65c00d9;
+}
+
+/* Contacto */
+
+#form {
+  background-color: #c65c00d9;
+}
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+.inputContacto {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c65c00d9;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.mensajeContacto {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c65c00d9;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.ContactLabel {
+  display: block;
+  float: center;
+}
+
+.submitContact {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #c65c00d9;
+  border-color: #c65c00d9;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+.submitContact p {
+  color: #fff;
+}
+
+.obligatorioContact {
+  color: #c65c00d9;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.titleContact {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #c65c00d9;
+}
+
+.ContactP {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #c65c00d9;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid#c65c00d9;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #c65c00d9;
+}
+
+label[for="sexoHombre"],
+label[for="sexoMujer"],
+label[for="sexoNoEspecifica"],
+select[name="Motivo"] {
+  border-width: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.formulario p:nth-of-type(4) {
+  display: flex;
+  flex-direction: row;
+}
+
+label[for="sexoHombre"],
+label[for="sexoMujer"],
+label[for="sexoNoEspecifica"],
+select[name="Motivo"] {
+  border-width: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.form-select {
+  border: 1px solid #c65c00d9;
+  border-radius: 5px;
+  padding: 5px;
+  width: 380px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px #2e7d32;
+}
+
+.form-select option {
+  background-color: white;
+  color: #c65c00d9;
+}
+
+/* Footer general */
 
 footer {
   background-color: black;
   text-align: center;
 }
 
-.footer-sm {
-  background-color: #212121;
-  color: white;
+.footer-sm .icon-big {
+  color: #c65c00d9;
 }
 
-.footer-sm h5 {
+.footer-sm {
+  background-color: #212121;
+}
+
+h5 {
   padding-top: 5px;
+  color: white;
 }
 
 .foot-bottom_copyright {

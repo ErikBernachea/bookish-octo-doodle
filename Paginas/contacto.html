@@ -34,13 +34,13 @@
     <title>IDLES</title>
   </head>
 
-  <body>
+  <body id="form">
     <!-- HEADER -->
     <header>
       <div>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../home.html">IDLES</a>
+            <a class="navbar-brand" href="../index.html">IDLES</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -55,12 +55,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="../home.html"
-                    >Home</a
-                  >
+                  <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/Paginas/Bio.html">Biografia</a>
@@ -74,7 +69,12 @@
                   <a class="nav-link" href="/Paginas/FAQ.html">FAQ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Paginas/contacto.html">Contacto</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/Paginas/contacto.html"
+                    >Contacto</a
+                  >
                 </li>
               </ul>
             </div>
@@ -83,73 +83,141 @@
       </div>
     </header>
 
-    <h1>CONTACTO</h1>
     <main>
-      <section id="Contact">
-        <form action="">
-          <fieldset class="form">
-            <legend class="tittle">Envie su Consulta</legend>
-            <div class="row">
-              <label for="nombre">NOMBRE:</label>
-              <input type="text" name="nombre" id="nombre" />
-            </div>
-            <div class="row">
-              <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" id="apellido" />
-            </div>
-            <div class="row">
-              <label for="E-mail">E-mail:</label>
-              <input type="text" name="email" id="contacto" />
-            </div>
-            <div class="Column">
-              <label for="">Hombre</label>
-              <input type="radio" name="sexo" value="Hombre" />
-              <label for="">Mujer</label>
-              <input type="radio" name="sexo" value="Mujer" />
-              <label for="">No especifica</label>
-              <input type="radio" name="sexo" value="No especifica" />
-            </div>
-            <div class="column">Acepta Terminos y condiciones</div>
-            <div class="checkbox">
-              <input type="checkbox" name="Acepta" id="Acepta" value="1" />
-            </div>
-            <div class="column">
-              <label for="Motivo">Motivo:</label>
-              <select name="Motivo" id="Motivo">
-                <option value="no value">-Seleccionar-</option>
-                <option value="consulta">Consulta</option>
-                <option value="aporte">Aporte</option>
-                <option value="reclamo">Reclamo</option>
-                <option value="solicitud">Solicitud</option>
-                <option value="misc">Otro</option>
-              </select>
-            </div>
-            <div class="column">
-              <label for="Mensaje">Mensaje:</label>
-              <textarea
-                name="Mendaje"
-                id="Mensaje"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <div class="buttons">
-              <input type="submit" value="Enviar" />
-              <input type="reset" value="Cancelar" />
-            </div>
-          </fieldset>
-        </form>
+      <section>
+        <div class="contact_form">
+          <div class="formulario">
+            <h1 class="titleContact">CONTACTO</h1>
+            <form
+              class="FAQform"
+              action="submeter-formulario.php"
+              method="post"
+            >
+              <p class="ContactP">
+                <label for="nombre" class="ContactLabel"
+                  >Nombre y Apellido
+                  <span class="obligatorioContact">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="introducir_nombre"
+                  class="inputContacto"
+                  required="obligatorio"
+                  placeholder="Escribe tu nombre"
+                />
+              </p>
+
+              <p class="ContactP">
+                <label for="email" class="ContactLabel"
+                  >Email <span class="obligatorioContact">*</span> </label
+                ><input
+                  type="email"
+                  name="introducir_email"
+                  class="inputContacto"
+                  required="obligatorio"
+                  placeholder="Escribe tu Email"
+                />
+              </p>
+
+              <p class="ContactP">
+                <label for="telefone" class="ContactLabel">Teléfono</label>
+                <input
+                  type="tel"
+                  name="introducir_telefono"
+                  class="inputContacto"
+                  placeholder="Escribe tu teléfono"
+                />
+              </p>
+
+              <p class="ContactP">
+                <label class="ContactLabel">Sexo:</label>
+                <input
+                  type="radio"
+                  name="sexo"
+                  value="Hombre"
+                  class="inputContacto"
+                />
+                <label for="sexoHombre" class="ContactLabel">Hombre</label>
+                <input
+                  type="radio"
+                  name="sexo"
+                  value="Mujer"
+                  class="inputContacto"
+                  class="form-check-input"
+                />
+                <label for="sexoMujer" class="ContactLabel">Mujer</label>
+                <input
+                  type="radio"
+                  name="sexo"
+                  value="No especifica"
+                  class="inputContacto"
+                />
+                <label for="sexoNoEspecifica" class="ContactLabel"
+                  >No especifica</label
+                >
+              </p>
+
+              <p class="ContactP">
+                <label for="Motivo" class="ContactLabel"
+                  >Motivo: <span class="obligatorioContact">*</span>
+                </label>
+                <select name="Motivo" id="Motivo" class="form-select">
+                  <option value="no value">-Seleccionar-</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="aporte">Aporte</option>
+                  <option value="reclamo">Reclamo</option>
+                  <option value="solicitud">Solicitud</option>
+                  <option value="misc">Otro</option>
+                </select>
+              </p>
+
+              <p class="ContactP">
+                <label for="mensaje" class="ContactLabel"
+                  >Mensaje
+                  <span class="obligatorioContact">*</span>
+                </label>
+                <textarea
+                  name="introducir_mensaje"
+                  class="mensajeContacto"
+                  required="obligatorio"
+                  placeholder="Deja aquí tu comentario..."
+                ></textarea>
+              </p>
+              <button
+                type="submit"
+                name="enviar_formulario"
+                class="submitContact"
+              >
+                <p class="ContactP">Enviar</p>
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="footer-sm">
         <h5>Redes</h5>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-spotify"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.facebook.com/eriksebastian.bernachea/"
+          target="_blank"
+          ><i class="fab fa-facebook icon-big"></i
+        ></a>
+        <a href="https://ar.pinterest.com/erikbernachea95/" target="_blank"
+          ><i class="fab fa-pinterest icon-big"></i
+        ></a>
+        <a href=""><i class="fab fa-telegram icon-big" target="_blank"></i></a>
+        <a
+          href="https://open.spotify.com/playlist/4QTn20IA5NvT7gIjQE5c88?si=88b8c6e67c574189"
+          target="_blank"
+          ><i class="fab fa-spotify icon-big"></i
+        ></a>
+        <a
+          href="https://github.com/ErikBernachea/bookish-octo-doodle.git"
+          target="_blank"
+          ><i class="fab fa-github icon-big"></i
+        ></a>
       </div>
       <div class="foot-bottom_copyright">
         &copy; Copyright 2022 <a href="https://www.idlesband.com/">IDLES</a> |
